@@ -2,7 +2,7 @@
   "name": "pegin-cap-evaluator",
   "version": "1.0.0",
   "description": "",
-  "main": "src/pegin-cap-evaluator.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "mocha test/*"
   },
