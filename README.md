@@ -35,3 +35,13 @@ The Bridge will reject any peg-in that takes the RSK Federation wallet balance b
 Returns the current availability to peg-in. This value is represented in satoshis.
 Any user wanting to peg-in should check that the amount never surpasses this value.
 This value *doesn't guarantee* the peg-in won't be rejected.
+
+### Browser
+
+Generate the browser bundle (UMD):
+
+```shell
+npm run build-umd
+```
+
+Include this file in your webpage, and interact with `RskPegInCapEvaluator`.
