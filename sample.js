@@ -6,7 +6,7 @@ const satoshisToBtc = (satoshis) => round(satoshis / 1e+8);
 
 (async () => {
     let runner = main('http://localhost:4444');
-    console.log('RBTC in circulation            ', weisToRbtc(Number(await runner.getRbtcInCirculation())), 'RBTC');
+    console.log('R-BTC in circulation            ', weisToRbtc(Number(await runner.getRbtcInCirculation())), 'R-BTC');
     console.log('Locking cap                    ', satoshisToBtc(Number(await runner.getLockingCap())), 'satoshis');
     console.log('Current availability for peg-in', satoshisToBtc(Number(await runner.getPeginAvailability())), 'satoshis');
 })();
